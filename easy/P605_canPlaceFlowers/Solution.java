@@ -8,24 +8,31 @@
 
 class Solution {
     public boolean canPlaceFlowers(int[] flowerbed, int n) {
-        while (n > 0) {
-            for (int i = 0; i < flowerbed.length; i++) {
-                if (flowerbed[i] == 0) {
-                    if ((i == 0 || flowerbed[i - 1] == 0) &&
-                            ((i + 1) == flowerbed.length || flowerbed[i + 1] == 0)) {
-                        flowerbed[i] = 1;
-                        n -= 1;
+        // Early exit: if no flowers need to be planted, return true immediately
+        if (n == 0) {
+            return true;
+        }
+
+        for (int i = 0; i < flowerbed.length; i++) {
+            if (flowerbed[i] == 0) {
+                // Extract boundary checks for readability and correct evaluation
+                boolean emptyLeft = (i == 0) || (flowerbed[i - 1] == 0);
+                boolean emptyRight = (i == flowerbed.length - 1) || (flowerbed[i + 1] == 0);
+
+                if (emptyLeft && emptyRight) {
+                    flowerbed[i] = 1; // Plant the flower
+                    n--;              // Properly decrement the target counter
+
+                    // Early exit: stop processing if we've hit our target
+                    if (n == 0) {
+                        return true;
                     }
                 }
-                if (n <= 0)
-                    return true;
             }
-            if (n > 0)
-                return false;
-            else
-                return true;
         }
-        return true;
+
+        // If the loop finishes and n is still greater than 0, we failed
+        return n <= 0;
     }
 }
 // @lc code=end
