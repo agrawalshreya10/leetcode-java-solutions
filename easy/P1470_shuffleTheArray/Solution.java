@@ -10,15 +10,12 @@ import java.util.ArrayList;
 
 class Solution {
     public int[] shuffle(int[] nums, int n) {
-        ArrayList<Integer> finalArray = new ArrayList<>();
-        for (int i = 0; i < n; i++){
-            finalArray.add(nums[i]);
-            finalArray.add(nums[i+n]);
-        }
         int[] result = new int[2*n];
-        for (int i = 0; i < result.length; i++){
-            result[i] = finalArray.get(i);
-        }
+        int index = 0;
+        for (int i = 0; i < n; i++){
+            result[index++] = nums[i];
+            result[index++] = nums[i+n];
+        }      
         return result;
     }
 }
