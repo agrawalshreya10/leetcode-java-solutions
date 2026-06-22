@@ -1,0 +1,23 @@
+{
+  "studyPlans": [
+    {
+      "slug": "top-interview-150",
+      "name": "Top Interview 150"
+    }
+  ],
+  "problemLists": [],
+  "theme": "auto",
+  "defaultDirectory": ".",
+  "fileNamePattern": "id",
+  "language": "java",
+  "internalApiUrl": "",
+  "showProblemset": true,
+  "showStudyPlans": true,
+  "showProblemLists": true,
+  "showQotd": true,
+  "qotdMonths": 6,
+  "agentPromptMakeRunnable": "Make this Runnable, do not give solution.",
+  "agentPromptHint": "Load **lcex-dsa-hint** and follow it. Nudge from the problem only—do not read or review my code. Each `coaching` value: one short line; no solution.",
+  "agentPromptAnalyze": "Load **lcex-dsa-analyze** and follow it. Analyze my current LeetCode solution implementation.",
+  "problemViewMode": "ui"
+}

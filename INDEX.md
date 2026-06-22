@@ -32,6 +32,9 @@ INDEX.md             ← this file
 | 605 | [Can Place Flowers](solutions/array/605-can-place-flowers/NOTES.md) | leetcode-75 | greedy | ✅ | [NOTES](solutions/array/605-can-place-flowers/NOTES.md) |
 | 724 | [Find Pivot Index](solutions/array/724-find-pivot-index/NOTES.md) | leetcode-75 | prefix-sum | ✅ | [NOTES](solutions/array/724-find-pivot-index/NOTES.md) |
 | 1732 | [Find Highest Altitude](solutions/array/1732-find-highest-altitude/NOTES.md) | leetcode-75 | prefix-sum | ✅ | [NOTES](solutions/array/1732-find-highest-altitude/NOTES.md) |
+| 485 | [Max Consecutive Ones](solutions/array/485-max-consecutive-ones/NOTES.md) | quest-problems | single-pass | ✅ | [NOTES](solutions/array/485-max-consecutive-ones/NOTES.md) |
+| 1470 | [Shuffle the Array](solutions/array/1470-shuffle-the-array/NOTES.md) | quest-problems | interleaving | ✅ | [NOTES](solutions/array/1470-shuffle-the-array/NOTES.md) |
+| 1929 | [Concatenation of Array](solutions/array/1929-concatenation-of-array/NOTES.md) | quest-problems | array-basics | ✅ | [NOTES](solutions/array/1929-concatenation-of-array/NOTES.md) |
 
 ### String
 
