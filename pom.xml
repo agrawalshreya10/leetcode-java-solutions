@@ -61,6 +61,9 @@
                     <includes>
                         <include>**/TestCases.java</include>
                     </includes>
+                    <excludes>
+                        <exclude>**/Template.java</exclude>
+                    </excludes>
                 </configuration>
             </plugin>
         </plugins>

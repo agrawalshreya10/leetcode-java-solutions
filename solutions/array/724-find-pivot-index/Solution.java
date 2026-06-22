@@ -1,4 +1,5 @@
 // LC-724 | Category: array | Difficulty: easy | Patterns: prefix-sum | Plans: leetcode-75
+package leetcode.array.findpivotindex;
 
 /*
  * @lc app=leetcode id=724 lang=java

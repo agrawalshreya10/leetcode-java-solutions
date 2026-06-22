@@ -17,12 +17,16 @@ Use when data is a **singly/doubly linked list** and you must:
 ```java
 ListNode dummy = new ListNode();
 ListNode tail = dummy;
-while (l1 != null || l2 != null /* || carry */) {
-    int value = /* compute */;
-    tail.next = new ListNode(value);
+int carry = 0;
+while (l1 != null || l2 != null || carry != 0) {
+    int sum = carry;
+    // add l1 / l2 and advance pointers
+    tail.next = new ListNode(sum % 10);
+   
     tail = tail.next;
-    // advance pointers
+    carry = sum/10;
 }
+
 return dummy.next;
 ```
 
@@ -41,12 +45,12 @@ while (fast != null && fast.next != null) {
 
 ## Variations
 
-| Variant | Technique |
-|---------|-----------|
-| Add with carry | Dummy + single loop |
-| Reverse list | Iterative three-pointer |
-| Remove nth from end | Fast/slow offset by n |
-| Merge k lists | Heap / divide-conquer |
+| Variant             | Technique               |
+| ------------------- | ----------------------- |
+| Add with carry      | Dummy + single loop     |
+| Reverse list        | Iterative three-pointer |
+| Remove nth from end | Fast/slow offset by n   |
+| Merge k lists       | Heap / divide-conquer   |
 
 ## Anti-patterns
 
@@ -56,12 +60,12 @@ while (fast != null && fast.next != null) {
 
 ## Linked Problems
 
-| Problem | Technique |
-|---------|-----------|
-| LC 2 Add Two Numbers | Merge + carry |
-| LC 21 Merge Two Sorted Lists | Dummy merge |
-| LC 141 Linked List Cycle | Fast/slow |
-| LC 206 Reverse Linked List | Iterative reverse |
+| Problem                      | Technique         |
+| ---------------------------- | ----------------- |
+| LC 2 Add Two Numbers         | Merge + carry     |
+| LC 21 Merge Two Sorted Lists | Dummy merge       |
+| LC 141 Linked List Cycle     | Fast/slow         |
+| LC 206 Reverse Linked List   | Iterative reverse |
 
 ## SDET in the Wild
 

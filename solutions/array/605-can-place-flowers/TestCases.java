@@ -1,3 +1,5 @@
+package leetcode.array.canplaceflowers;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -46,7 +48,8 @@ class TestCases {
     @Test
     void allEmpty_largeBed() {
         assertTrue(solution.canPlaceFlowers(new int[]{0, 0, 0, 0, 0}, 2));
-        assertFalse(solution.canPlaceFlowers(new int[]{0, 0, 0, 0, 0}, 3));
+        assertTrue(solution.canPlaceFlowers(new int[]{0, 0, 0, 0, 0}, 3));
+        assertFalse(solution.canPlaceFlowers(new int[]{0, 0, 0, 0, 0}, 4));
     }
 
     @ParameterizedTest

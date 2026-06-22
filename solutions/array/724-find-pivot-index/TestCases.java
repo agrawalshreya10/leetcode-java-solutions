@@ -1,3 +1,5 @@
+package leetcode.array.findpivotindex;
+
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
@@ -18,7 +20,7 @@ class TestCases {
 
     @Test
     void example2() {
-        assertEquals(2, solution.pivotIndex(new int[]{1, 7, 3, 6, 5, 6}));
+        assertEquals(3, solution.pivotIndex(new int[]{1, 7, 3, 6, 5, 6}));
     }
 
     @Test
@@ -33,7 +35,7 @@ class TestCases {
 
     @Test
     void pivotAtStart() {
-        assertEquals(0, solution.pivotIndex(new int[]{10, -10, 5}));
+        assertEquals(2, solution.pivotIndex(new int[]{10, -10, 5}));
     }
 
     @Test
@@ -56,7 +58,7 @@ class TestCases {
         return Stream.of(
                 Arguments.of(new int[]{2, 1, -1}, 0),
                 Arguments.of(new int[]{-1, -1, -1, 0, 1, 1}, 0),
-                Arguments.of(new int[]{1, 0, 1, 0, 1}, -1)
+                Arguments.of(new int[]{1, 0, 1, 0, 1}, 2)
         );
     }
 }

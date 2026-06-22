@@ -19,7 +19,8 @@ INDEX.md             ← this file
 ```
 
 **Category folders** (`array`, `string`, `linked-list`, …) reflect problem domain.  
-**Study plans** (`leetcode-75`, `top-interview-150`) and **patterns** live in the header comment on `Solution.java`.
+**Study plans** (`leetcode-75`, `top-interview-150`) and **patterns** live in the header comment on `Solution.java`.  
+**Packages** (`package leetcode.array.movezeroes;`, etc.) are for local `mvn test` only — remove before LeetCode submit.
 
 ## Problems
 
@@ -75,7 +76,7 @@ mvn test -Dtest=TestCases -Dsurefire.failIfNoSpecifiedTests=false \
 
 | Mechanism | What it does |
 |-----------|----------------|
-| **post-commit hook** (`.githooks/post-commit`) | After any commit, runs `git push -u origin <current-branch>` (sets upstream on first push; exits non-zero on failure) |
+| **post-commit hook** (`.githooks/post-commit`) | After any commit, runs `git push origin <current-branch>` (exits non-zero on failure) |
 | **scripts/commit_updates.sh** | Stages `solutions/` + `sql/`, commits with `Solved: <folder-name>` |
 
 **Git hook vs VS Code task:** Hooks run whenever you commit (terminal or IDE) — true automation. VS Code tasks only run when you trigger them. Hooks are recommended for push-after-commit.

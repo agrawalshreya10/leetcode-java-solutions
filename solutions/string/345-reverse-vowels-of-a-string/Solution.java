@@ -1,4 +1,5 @@
 // LC-345 | Category: string | Difficulty: easy | Patterns: two-pointers | Plans: leetcode-75
+package leetcode.string.reversevowelsofastring;
 
 /*
  * @lc app=leetcode id=345 lang=java

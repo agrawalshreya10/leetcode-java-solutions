@@ -1,4 +1,5 @@
 // LC-283 | Category: array | Difficulty: easy | Patterns: two-pointers | Plans: leetcode-75
+package leetcode.array.movezeroes;
 
 /*
  * @lc app=leetcode id=283 lang=java

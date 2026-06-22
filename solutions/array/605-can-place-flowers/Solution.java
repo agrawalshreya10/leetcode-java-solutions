@@ -1,4 +1,5 @@
 // LC-605 | Category: array | Difficulty: easy | Patterns: greedy | Plans: leetcode-75
+package leetcode.array.canplaceflowers;
 
 /*
  * @lc app=leetcode id=605 lang=java

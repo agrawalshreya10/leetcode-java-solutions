@@ -1,4 +1,5 @@
 // LC-1732 | Category: array | Difficulty: easy | Patterns: prefix-sum | Plans: leetcode-75
+package leetcode.array.findhighestaltitude;
 
 /*
  * @lc app=leetcode id=1732 lang=java
