@@ -1,0 +1,13 @@
+#!/bin/bash
+# Automatically push the current branch after each commit.
+
+set -euo pipefail
+
+BRANCH="$(git rev-parse --abbrev-ref HEAD)"
+
+if ! git push -u origin "$BRANCH"; then
+    echo "ERROR: Push to origin/${BRANCH} failed. Commit is saved locally." >&2
+    exit 1
+fi
+
+echo "Pushed ${BRANCH} to origin."
