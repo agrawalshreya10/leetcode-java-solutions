@@ -1,4 +1,5 @@
-package P283_moveZeroes;
+// LC-283 | Category: array | Difficulty: easy | Patterns: two-pointers | Plans: leetcode-75
+package leetcode.array.movezeroes;
 
 /*
  * @lc app=leetcode id=283 lang=java
@@ -7,7 +8,6 @@ package P283_moveZeroes;
  */
 
 // @lc code=start
-
 class Solution {
     public void moveZeroes(int[] nums) {
         int n = nums.length;
@@ -19,14 +19,11 @@ class Solution {
                 }
             }
 
-            while (j < n){
+            while (j < n) {
                 nums[j] = 0;
                 j++;
             }
-         
         }
-
     }
 }
 // @lc code=end
-

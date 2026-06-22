@@ -1,0 +1,17 @@
+# Maven
+target/
+
+# IDE (optional but common)
+.idea/
+*.iml
+.vscode/
+.cursor/rules/
+.classpath
+.project
+.settings/
+
+# OS
+.DS_Store
+
+# LeetCode
+.leetcode
