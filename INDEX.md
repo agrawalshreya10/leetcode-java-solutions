@@ -86,26 +86,20 @@ mvn test -Dtest=TestCases -Dsurefire.failIfNoSpecifiedTests=false \
 
 Run `./scripts/install-hooks.sh` once per clone.
 
-## LeetCode extension (local setup — not committed)
+## LeetCode Practice extension (optional — not required)
 
-Add to your **user** settings in Cursor/VS Code (do not commit personal paths to the repo). Set `leetcode.workspaceFolder` to the absolute path of your local clone, or use `${workspaceFolder}` in a local-only `.vscode/settings.json` if this repo is your opened workspace.
+This repo is **solutions-first**: `Solution.java`, `NOTES.md`, `TestCases.java`, and `templates/` are useful without any IDE extension. Extension setup is personal and **not committed** (`.leetcode` is gitignored).
 
-```json
-{
-  "leetcode.workspaceFolder": "/absolute/path/to/your/leetcode-java-2026-clone",
-  "leetcode.defaultLanguage": "java",
-  "leetcode.filePath": {
-    "java": {
-      "folder": "solutions/${tag}/${id}-${kebab-case-name}",
-      "filename": "Solution.${ext}"
-    }
-  }
-}
-```
+**If you use [LeetCode Practice](https://marketplace.visualstudio.com/items?itemName=NikkyAmresh.leetcode-practice)** (`NikkyAmresh.leetcode-practice`):
 
-**Tag mismatch:** LeetCode `${tag}` may be `Array` while our folder is `array`. After creating a file via the extension, move it to the correct category folder if needed; keep the header comment as source of truth.
+1. Create an empty `.leetcode` file in the repo root (activates the extension).
+2. Configure language, study plan, and paths in `.leetcode` or local `.vscode/settings.json` — see extension docs for `leetcodePractice.*` keys.
+3. Sign in: Command Palette → `LeetCode: Sign In`.
+4. Submit/Test against `Solution.java` with `@lc` markers.
 
-Sign in: Command Palette → `LeetCode: Sign In`. Submit/Test work on `Solution.java` with `@lc` markers.
+**Layout mismatch:** the extension generates flat files (e.g. `solutions/485.java`). This repo uses `solutions/[category]/[id-kebab-name]/Solution.java`. After creating a file via the extension, **move it** into the correct category folder and rename to `Solution.java`. Header comment tags are the source of truth for category, pattern, and plan.
+
+**Agent:** when the user creates a problem via the extension, reorganize the flat file into repo layout automatically (folder, rename, package, header, `INDEX.md` row) — do not ask each time.
 
 ## Workflow
 
