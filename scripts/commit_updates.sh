@@ -7,7 +7,14 @@ set -euo pipefail
 REPO_ROOT="$(git rev-parse --show-toplevel)"
 cd "$REPO_ROOT"
 
-git add solutions/ sql/ INDEX.md templates/ pom.xml scripts/ .githooks/
+FLAT_LC="$(find solutions -maxdepth 1 -name 'LCexMain*.java' 2>/dev/null | head -5)"
+if [[ -n "$FLAT_LC" ]]; then
+    echo "Abort: flat extension solve files still present (run agent checkpoint first):"
+    echo "$FLAT_LC"
+    exit 1
+fi
+
+git add solutions/ sql/ INDEX.md templates/ pom.xml scripts/ .githooks/ .vscode/settings.json .cursor/rules/leetcode-mentor.mdc
 
 if git diff --cached --quiet; then
     echo "No staged changes in solutions/, sql/, or repo scaffolding."

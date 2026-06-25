@@ -4,8 +4,12 @@ target/
 # IDE (optional but common)
 .idea/
 *.iml
-.vscode/
-.cursor/rules/
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+.cursor/*
+!.cursor/rules/
+!.cursor/rules/leetcode-mentor.mdc
 .classpath
 .project
 .settings/
@@ -13,5 +17,10 @@ target/
 # OS
 .DS_Store
 
-# LeetCode
+# LeetCode workspace config (local)
 .leetcode
+
+# LeetCode Practice extension — ephemeral flat workspace (not reorganized solutions)
+solutions/LCexMain*.java
+solutions/*.hint
+solutions/.lcex_java_out/
