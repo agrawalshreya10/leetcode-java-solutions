@@ -1,0 +1,49 @@
+{
+  "editor.fontFamily": "Fira Code iScript",
+  "editor.tokenColorCustomizations": {
+    "textMateRules": [
+      {
+        "scope": [
+          "comment",
+          "keyword",
+          "storage.modifier",
+          "storage.type",
+          "storage.type.class.js",
+          "storage.type.js",
+          "storage.type.ts",
+          "storage.type.class.ts"
+        ],
+        "settings": {
+          "fontStyle": "italic"
+        }
+      },
+      {
+        "scope": ["keyword.operator"],
+        "settings": {
+          "fontStyle": ""
+        }
+      }
+    ]
+  },
+  "editor.quickSuggestions": {
+    "other": false,
+    "comments": false,
+    "strings": false
+  },
+  "editor.suggestOnTriggerCharacters": false,
+  "editor.wordBasedSuggestions": "off",
+  "editor.parameterHints.enabled": false,
+  "editor.inlineSuggest.enabled": false,
+  "editor.tabCompletion": "off",
+  "[java]": {
+    "editor.quickSuggestions": {
+      "other": false,
+      "comments": false,
+      "strings": false
+    }
+  },
+  "java.completion.enabled": false,
+  "java.completion.guessMethodArguments": false,
+  "leetcodePractice.suppressAiTabOnSolve": true,
+  "leetcodePractice.suppressAiTabWorkspaceWide": true
+}

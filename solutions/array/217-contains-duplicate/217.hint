@@ -1,0 +1,34 @@
+{
+  "version": 1,
+  "titleSlug": "contains-duplicate",
+  "updatedAt": "2026-06-24T23:15:00.000Z",
+  "problemTitle": "Contains Duplicate",
+  "approach": {
+    "current": "HashSet membership: insert every element, then compare set size to array length — smaller set means a duplicate was collapsed.",
+    "keyIdea": "Right pattern for O(n) duplicate detection; logic and return values are correct.",
+    "currentRating": "good",
+    "score": 9
+  },
+  "efficiency": {
+    "time": {
+      "current": "O(n) average",
+      "currentRating": "good",
+      "score": 9
+    },
+    "space": {
+      "current": "O(n)",
+      "currentRating": "good",
+      "score": 8
+    }
+  },
+  "codeStyle": {
+    "readability": "Clear naming and a single obvious pass; the if/else body could be one return expression.",
+    "structure": "Straightforward single-method layout; minor indentation on the if-branch return.",
+    "readabilityScore": 8,
+    "structureScore": 7
+  },
+  "coaching": {
+    "approach": "A duplicate is a second sighting—what must your scan remember from earlier indices?",
+    "efficiency": "n can be 10⁵; how does comparing every pair scale versus one decision per element?"
+  }
+}
