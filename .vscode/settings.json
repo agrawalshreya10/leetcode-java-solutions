@@ -30,20 +30,32 @@
     "comments": false,
     "strings": false
   },
+  "editor.suggest.enabled": false,
   "editor.suggestOnTriggerCharacters": false,
   "editor.wordBasedSuggestions": "off",
   "editor.parameterHints.enabled": false,
   "editor.inlineSuggest.enabled": false,
   "editor.tabCompletion": "off",
+  "cursor.cpp.disabledLanguages": [
+    "java",
+    "markdown",
+    "json",
+    "plaintext",
+    "sql"
+  ],
   "[java]": {
     "editor.quickSuggestions": {
       "other": false,
       "comments": false,
       "strings": false
-    }
+    },
+    "editor.inlineSuggest.enabled": false,
+    "editor.suggest.enabled": false
   },
   "java.completion.enabled": false,
   "java.completion.guessMethodArguments": false,
   "leetcodePractice.suppressAiTabOnSolve": true,
-  "leetcodePractice.suppressAiTabWorkspaceWide": true
+  "leetcodePractice.suppressAiTabWorkspaceWide": true,
+  "workbench.colorTheme": "LeetCode Dark",
+  "workbench.preferredDarkColorTheme": "LeetCode Dark"
 }
