@@ -7,7 +7,7 @@ Master index for solutions, patterns, and revision notes.
 ```text
 solutions/[category]/[id-kebab-name]/
   Solution.java      ← LeetCode-ready (header comment tags)
-  TestCases.java     ← JUnit 5 local verification
+  TestCases.java     ← JUnit local verification
   NOTES.md           ← SDET review + complexity + learnings
 sql/[id-kebab-name]/
   solution.sql
