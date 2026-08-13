@@ -55,6 +55,7 @@ while (left < right) {
 
 | Problem | Variant |
 |---------|---------|
+| LC 167 Two Sum II (sorted) | Converging pair-sum |
 | LC 283 Move Zeroes | Write pointer |
 | LC 345 Reverse Vowels | Converging + swap |
 | LC 11 Container With Most Water | Converging |

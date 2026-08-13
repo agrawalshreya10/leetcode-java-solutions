@@ -4,7 +4,7 @@ Reusable algorithm templates for interview prep and SDET utility design.
 
 | Pattern | Folder | Used by |
 |---------|--------|---------|
-| Two Pointers | [two-pointers/](two-pointers/EXPLANATION.md) | 283, 345 |
+| Two Pointers | [two-pointers/](two-pointers/EXPLANATION.md) | 167, 283, 345 |
 | Prefix Sum | [prefix-sum/](prefix-sum/EXPLANATION.md) | 724, 1732 |
 | Greedy | [greedy/](greedy/EXPLANATION.md) | 605 |
 | Linked List | [linked-list/](linked-list/EXPLANATION.md) | 2 |

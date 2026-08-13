@@ -36,6 +36,7 @@ INDEX.md             ← this file
 | 1470 | [Shuffle the Array](solutions/array/1470-shuffle-the-array/NOTES.md) | quest-problems | interleaving | ✅ | [NOTES](solutions/array/1470-shuffle-the-array/NOTES.md) |
 | 1929 | [Concatenation of Array](solutions/array/1929-concatenation-of-array/NOTES.md) | quest-problems | array-basics | ✅ | [NOTES](solutions/array/1929-concatenation-of-array/NOTES.md) |
 | 217 | [Contains Duplicate](solutions/array/217-contains-duplicate/NOTES.md) | senior-sdet-interview-prep | hash-set | ✅ | [NOTES](solutions/array/217-contains-duplicate/NOTES.md) |
+| 167 | [Two Sum II](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md) | senior-sdet-interview-prep | two-pointers | ✅ | [NOTES](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md) |
 
 ### String
 
