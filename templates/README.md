@@ -8,8 +8,9 @@ Reusable algorithm templates for interview prep and SDET utility design.
 | Prefix Sum | [prefix-sum/](prefix-sum/EXPLANATION.md) | 724, 1732 |
 | Greedy | [greedy/](greedy/EXPLANATION.md) | 605 |
 | Linked List | [linked-list/](linked-list/EXPLANATION.md) | 2 |
+| Hash Map / Set | [hash-map/](hash-map/EXPLANATION.md) | 1, 217 |
 
-Coming soon: sliding-window, monotonic-stack, hashmap, bfs, queue.
+Coming soon: sliding-window, monotonic-stack, bfs, queue.
 
 Each folder contains:
 
