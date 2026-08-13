@@ -15,7 +15,7 @@ Return `true` if any value appears at least twice in `nums`.
 
 ## Pattern
 
-**Hash set membership** — track seen values; duplicates collapse in the set.
+**Hash set membership** — track seen values; duplicates collapse in the set. See [`templates/hash-map/EXPLANATION.md`](../../../templates/hash-map/EXPLANATION.md).
 
 - Insert every element into a `HashSet`.
 - If `set.size() < nums.length`, at least one value repeated → `true`.

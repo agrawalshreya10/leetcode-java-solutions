@@ -52,6 +52,12 @@
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>3.13.0</version>
+                <configuration>
+                    <!-- Flat LeetCode Practice files are WIP / gitignored; exclude from compile -->
+                    <testExcludes>
+                        <testExclude>**/LCexMain*.java</testExclude>
+                    </testExcludes>
+                </configuration>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
