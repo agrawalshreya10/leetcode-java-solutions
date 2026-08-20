@@ -41,6 +41,7 @@ INDEX.md             ← this file
 | 217  | [Contains Duplicate](solutions/array/217-contains-duplicate/NOTES.md)          | senior-sdet-interview-prep | hash-set     | ✅      | [NOTES](solutions/array/217-contains-duplicate/NOTES.md)               |
 | 1    | [Two Sum](solutions/array/1-two-sum/NOTES.md)                                  | senior-sdet-interview-prep | hash-map     | ✅      | [NOTES](solutions/array/1-two-sum/NOTES.md)                            |
 | 167  | [Two Sum II](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md) |
+| 15   | [3Sum](solutions/array/15-3sum/NOTES.md)                                       | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/15-3sum/NOTES.md)                              |
 
 
 

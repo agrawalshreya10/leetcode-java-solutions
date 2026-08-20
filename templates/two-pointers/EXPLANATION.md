@@ -76,7 +76,7 @@ while (left < right) {
 | LC 283 Move Zeroes              | Write pointer                |
 | LC 345 Reverse Vowels           | Converging + swap            |
 | LC 11 Container With Most Water | Converging                   |
-| LC 15 3Sum                      | Sort + converging (advanced) |
+| LC 15 [3Sum](../../../solutions/array/15-3sum/NOTES.md) | Sort + outer index + converging pair |
 | LC 26 Remove Duplicates         | Write pointer                |
 
 
