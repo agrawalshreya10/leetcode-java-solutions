@@ -77,6 +77,7 @@ while (left < right) {
 | LC 345 Reverse Vowels           | Converging + swap            |
 | LC 11 Container With Most Water | Converging                   |
 | LC 15 [3Sum](../../../solutions/array/15-3sum/NOTES.md) | Sort + outer index + converging pair |
+| LC 611 [Valid Triangle Number](../../../solutions/array/611-valid-triangle-number/NOTES.md) | Sort + fix largest + count `(j - i)` |
 | LC 26 Remove Duplicates         | Write pointer                |
 
 
