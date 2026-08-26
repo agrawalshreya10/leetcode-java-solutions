@@ -43,6 +43,8 @@ INDEX.md             ← this file
 | 167  | [Two Sum II](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md) |
 | 15   | [3Sum](solutions/array/15-3sum/NOTES.md)                                       | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/15-3sum/NOTES.md)                              |
 | 611  | [Valid Triangle Number](solutions/array/611-valid-triangle-number/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/611-valid-triangle-number/NOTES.md)            |
+| 75   | [Sort Colors](solutions/array/75-sort-colors/NOTES.md)                         | senior-sdet-interview-prep | three-pointers | ✅    | [NOTES](solutions/array/75-sort-colors/NOTES.md)                       |
+| 11   | [Container With Most Water](solutions/array/11-container-with-most-water/NOTES.md) | senior-sdet-interview-prep | two-pointers | ✅ | [NOTES](solutions/array/11-container-with-most-water/NOTES.md)         |
 
 ### String
 
