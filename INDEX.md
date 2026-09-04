@@ -5,22 +5,24 @@ Master index for solutions, patterns, and revision notes.
 ## Repo layout
 
 ```text
-solutions/[category]/[id-kebab-name]/
-  Solution.java      ← LeetCode-ready (header comment tags)
+solutions/leetcode/[category]/[compact]/
+  Solution.java      ← package leetcode.[category].[compact]; (matches folders)
   TestCases.java     ← JUnit local verification
   NOTES.md           ← SDET review + complexity + learnings
+  {id}.hint          ← optional extension analysis JSON
 sql/[id-kebab-name]/
   solution.sql
   TestCases.sql
 templates/[pattern]/
   EXPLANATION.md
   Template.java
-INDEX.md             ← this file
+INDEX.md             ← this file (ID column keeps the LeetCode number)
 ```
 
-**Category folders** (`array`, `string`, `linked-list`, …) reflect problem domain.  
-**Plans** (e.g. `senior-sdet-interview-prep`) and **patterns** live in the header comment on `Solution.java`.  
-**Packages** (`package leetcode.array.movezeroes;`, etc.) are for local `mvn test` only — remove before LeetCode submit.
+**Category** is the Java package segment (`array`, `string`, `linkedlist`, …) — must be a legal identifier (no hyphens).  
+**Compact** is the LeetCode `titleSlug` with hyphens removed (`sort-colors` → `sortcolors`, `meeting-rooms-ii` → `meetingroomsii`) so sequels stay unique without putting the numeric id in the path.  
+**Plans** and **patterns** live in the header comment on `Solution.java`.  
+**Packages** match the folder path under `solutions/` so the IDE and `mvn test` agree. Remove the `package` line before pasting to LeetCode submit.
 
 ## Problems
 
@@ -31,27 +33,27 @@ INDEX.md             ← this file
 
 | ID   | Problem                                                                        | Plan                       | Pattern      | Status | Notes                                                                  |
 | ---- | ------------------------------------------------------------------------------ | -------------------------- | ------------ | ------ | ---------------------------------------------------------------------- |
-| 283  | [Move Zeroes](solutions/array/283-move-zeroes/NOTES.md)                        | leetcode-75                | two-pointers | ✅      | [NOTES](solutions/array/283-move-zeroes/NOTES.md)                      |
-| 605  | [Can Place Flowers](solutions/array/605-can-place-flowers/NOTES.md)            | leetcode-75                | greedy       | ✅      | [NOTES](solutions/array/605-can-place-flowers/NOTES.md)                |
-| 724  | [Find Pivot Index](solutions/array/724-find-pivot-index/NOTES.md)              | leetcode-75                | prefix-sum   | ✅      | [NOTES](solutions/array/724-find-pivot-index/NOTES.md)                 |
-| 1732 | [Find Highest Altitude](solutions/array/1732-find-highest-altitude/NOTES.md)   | leetcode-75                | prefix-sum   | ✅      | [NOTES](solutions/array/1732-find-highest-altitude/NOTES.md)           |
-| 485  | [Max Consecutive Ones](solutions/array/485-max-consecutive-ones/NOTES.md)      | quest-problems             | single-pass  | ✅      | [NOTES](solutions/array/485-max-consecutive-ones/NOTES.md)             |
-| 1470 | [Shuffle the Array](solutions/array/1470-shuffle-the-array/NOTES.md)           | quest-problems             | interleaving | ✅      | [NOTES](solutions/array/1470-shuffle-the-array/NOTES.md)               |
-| 1929 | [Concatenation of Array](solutions/array/1929-concatenation-of-array/NOTES.md) | quest-problems             | array-basics | ✅      | [NOTES](solutions/array/1929-concatenation-of-array/NOTES.md)          |
-| 217  | [Contains Duplicate](solutions/array/217-contains-duplicate/NOTES.md)          | senior-sdet-interview-prep | hash-set     | ✅      | [NOTES](solutions/array/217-contains-duplicate/NOTES.md)               |
-| 1    | [Two Sum](solutions/array/1-two-sum/NOTES.md)                                  | senior-sdet-interview-prep | hash-map     | ✅      | [NOTES](solutions/array/1-two-sum/NOTES.md)                            |
-| 167  | [Two Sum II](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/167-two-sum-ii-input-array-is-sorted/NOTES.md) |
-| 15   | [3Sum](solutions/array/15-3sum/NOTES.md)                                       | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/15-3sum/NOTES.md)                              |
-| 611  | [Valid Triangle Number](solutions/array/611-valid-triangle-number/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/array/611-valid-triangle-number/NOTES.md)            |
-| 75   | [Sort Colors](solutions/array/75-sort-colors/NOTES.md)                         | senior-sdet-interview-prep | three-pointers | ✅    | [NOTES](solutions/array/75-sort-colors/NOTES.md)                       |
-| 11   | [Container With Most Water](solutions/array/11-container-with-most-water/NOTES.md) | senior-sdet-interview-prep | two-pointers | ✅ | [NOTES](solutions/array/11-container-with-most-water/NOTES.md)         |
+| 283  | [Move Zeroes](solutions/leetcode/array/movezeroes/NOTES.md)                        | leetcode-75                | two-pointers | ✅      | [NOTES](solutions/leetcode/array/movezeroes/NOTES.md)                      |
+| 605  | [Can Place Flowers](solutions/leetcode/array/canplaceflowers/NOTES.md)            | leetcode-75                | greedy       | ✅      | [NOTES](solutions/leetcode/array/canplaceflowers/NOTES.md)                |
+| 724  | [Find Pivot Index](solutions/leetcode/array/findpivotindex/NOTES.md)              | leetcode-75                | prefix-sum   | ✅      | [NOTES](solutions/leetcode/array/findpivotindex/NOTES.md)                 |
+| 1732 | [Find Highest Altitude](solutions/leetcode/array/findhighestaltitude/NOTES.md)   | leetcode-75                | prefix-sum   | ✅      | [NOTES](solutions/leetcode/array/findhighestaltitude/NOTES.md)           |
+| 485  | [Max Consecutive Ones](solutions/leetcode/array/maxconsecutiveones/NOTES.md)      | quest-problems             | single-pass  | ✅      | [NOTES](solutions/leetcode/array/maxconsecutiveones/NOTES.md)             |
+| 1470 | [Shuffle the Array](solutions/leetcode/array/shufflethearray/NOTES.md)           | quest-problems             | interleaving | ✅      | [NOTES](solutions/leetcode/array/shufflethearray/NOTES.md)               |
+| 1929 | [Concatenation of Array](solutions/leetcode/array/concatenationofarray/NOTES.md) | quest-problems             | array-basics | ✅      | [NOTES](solutions/leetcode/array/concatenationofarray/NOTES.md)          |
+| 217  | [Contains Duplicate](solutions/leetcode/array/containsduplicate/NOTES.md)          | senior-sdet-interview-prep | hash-set     | ✅      | [NOTES](solutions/leetcode/array/containsduplicate/NOTES.md)               |
+| 1    | [Two Sum](solutions/leetcode/array/twosum/NOTES.md)                                  | senior-sdet-interview-prep | hash-map     | ✅      | [NOTES](solutions/leetcode/array/twosum/NOTES.md)                            |
+| 167  | [Two Sum II](solutions/leetcode/array/twosumii/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/leetcode/array/twosumii/NOTES.md) |
+| 15   | [3Sum](solutions/leetcode/array/threesum/NOTES.md)                                       | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/leetcode/array/threesum/NOTES.md)                              |
+| 611  | [Valid Triangle Number](solutions/leetcode/array/validtrianglenumber/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/leetcode/array/validtrianglenumber/NOTES.md)            |
+| 75   | [Sort Colors](solutions/leetcode/array/sortcolors/NOTES.md)                         | senior-sdet-interview-prep | three-pointers | ✅    | [NOTES](solutions/leetcode/array/sortcolors/NOTES.md)                       |
+| 11   | [Container With Most Water](solutions/leetcode/array/containerwithmostwater/NOTES.md) | senior-sdet-interview-prep | two-pointers | ✅ | [NOTES](solutions/leetcode/array/containerwithmostwater/NOTES.md)         |
 
 ### String
 
 
 | ID  | Problem                                                                                | Plan        | Pattern      | Status | Notes                                                             |
 | --- | -------------------------------------------------------------------------------------- | ----------- | ------------ | ------ | ----------------------------------------------------------------- |
-| 345 | [Reverse Vowels of a String](solutions/string/345-reverse-vowels-of-a-string/NOTES.md) | leetcode-75 | two-pointers | 🚧     | [NOTES](solutions/string/345-reverse-vowels-of-a-string/NOTES.md) |
+| 345 | [Reverse Vowels of a String](solutions/leetcode/string/reversevowelsofastring/NOTES.md) | leetcode-75 | two-pointers | 🚧     | [NOTES](solutions/leetcode/string/reversevowelsofastring/NOTES.md) |
 
 
 
@@ -61,7 +63,7 @@ INDEX.md             ← this file
 
 | ID  | Problem                                                             | Plan              | Pattern     | Status | Notes                                                     |
 | --- | ------------------------------------------------------------------- | ----------------- | ----------- | ------ | --------------------------------------------------------- |
-| 2   | [Add Two Numbers](solutions/linked-list/2-add-two-numbers/NOTES.md) | top-interview-150 | linked-list | 🚧     | [NOTES](solutions/linked-list/2-add-two-numbers/NOTES.md) |
+| 2   | [Add Two Numbers](solutions/leetcode/linkedlist/addtwonumbers/NOTES.md) | top-interview-150 | linked-list | 🚧     | [NOTES](solutions/leetcode/linkedlist/addtwonumbers/NOTES.md) |
 
 
 
@@ -138,7 +140,7 @@ Because Java filenames must match a valid class name, the extension uses `LCexMa
 
 | Extension flat file          | Repo target (after agent move)                         |
 | ---------------------------- | ------------------------------------------------------ |
-| `solutions/LCexMain217.java` | `solutions/array/217-contains-duplicate/Solution.java` |
+| `solutions/LCexMain217.java` | `solutions/leetcode/array/containsduplicate/Solution.java` |
 
 
 Other languages (if used): `solutions/{id}.ts`, etc.
@@ -149,7 +151,7 @@ Other languages (if used): `solutions/{id}.ts`, etc.
 2. Say **checkpoint** (or *accepted* / *reorganize*) → agent moves to repo layout, adds `TestCases.java`, `NOTES.md`, moves `{id}.hint`, updates `INDEX.md`.
 3. `mvn test` on the reorganized folder; `./scripts/commit_updates.sh` (fails if flat `LCexMain*` still present).
 
-Flat extension artifacts (`LCexMain*.java`, `solutions/*.hint`, `.lcex_java_out/`) are **gitignored**. Reorganized `{id}.hint` inside problem folders **is** committed.
+Flat extension artifacts (`LCexMain*.java`, `solutions/*.hint`, `.lcex_java_out/`) are **gitignored**. Nested `{id}.hint` is committed **only** when it has substantial Analysis/coaching content (empty stubs are dropped).
 
 **New problems:** `Plans: senior-sdet-interview-prep` in the header comment. Older rows may show `leetcode-75` or `quest-problems` (historical).
 
@@ -171,8 +173,8 @@ Flat extension artifacts (`LCexMain*.java`, `solutions/*.hint`, `.lcex_java_out/
 
 ### Without extension
 
-1. Create folder `solutions/[category]/[id-name]/` manually.
-2. Implement in `Solution.java`.
+1. Create folder `solutions/leetcode/[category]/[compact]/` manually (compact = titleSlug without hyphens).
+2. Implement in `Solution.java` with matching `package leetcode.[category].[compact];`.
 3. Ask agent for `TestCases.java` + `NOTES.md` when ready.
 4. `mvn test` → commit.
 

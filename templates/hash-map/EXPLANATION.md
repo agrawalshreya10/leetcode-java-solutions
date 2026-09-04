@@ -53,8 +53,8 @@ for (int x : nums) {
 
 | Variant | Use |
 |---------|-----|
-| Set | Existence / duplicate only ([217](../../solutions/array/217-contains-duplicate/NOTES.md)) |
-| Value → index | Pair with complement, original indices ([1](../../solutions/array/1-two-sum/NOTES.md)) |
+| Set | Existence / duplicate only ([217](../../solutions/leetcode/array/containsduplicate/NOTES.md)) |
+| Value → index | Pair with complement, original indices ([1](../../solutions/leetcode/array/twosum/NOTES.md)) |
 | Sliding window + map | At most K distinct / longest substring without repeat |
 
 ## Anti-patterns
@@ -65,8 +65,8 @@ for (int x : nums) {
 
 ## Linked problems
 
-- [1 Two Sum](../../solutions/array/1-two-sum/NOTES.md) — value → index
-- [217 Contains Duplicate](../../solutions/array/217-contains-duplicate/NOTES.md) — set size vs length
+- [1 Two Sum](../../solutions/leetcode/array/twosum/NOTES.md) — value → index
+- [217 Contains Duplicate](../../solutions/leetcode/array/containsduplicate/NOTES.md) — set size vs length
 - Related: 219 Contains Duplicate II, 242 Valid Anagram, 49 Group Anagrams
 
 ## SDET use case

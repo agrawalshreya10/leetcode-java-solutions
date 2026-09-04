@@ -23,7 +23,8 @@ fi
 
 PROBLEM_NAME=""
 while IFS= read -r file; do
-    if [[ "$file" =~ solutions/[^/]+/([^/]+)/ ]]; then
+    # solutions/leetcode/{category}/{compact}/...
+    if [[ "$file" =~ solutions/leetcode/[^/]+/([^/]+)/ ]]; then
         PROBLEM_NAME="${BASH_REMATCH[1]}"
         break
     fi

@@ -75,10 +75,10 @@ while (left < right) {
 | LC 167 Two Sum II (sorted)      | Converging pair-sum          |
 | LC 283 Move Zeroes              | Write pointer                |
 | LC 345 Reverse Vowels           | Converging + swap            |
-| LC 11 [Container With Most Water](../../../solutions/array/11-container-with-most-water/NOTES.md) | Converging — move shorter wall |
-| LC 15 [3Sum](../../../solutions/array/15-3sum/NOTES.md) | Sort + outer index + converging pair |
-| LC 611 [Valid Triangle Number](../../../solutions/array/611-valid-triangle-number/NOTES.md) | Sort + fix largest + count `(j - i)` |
-| LC 75 [Sort Colors](../../../solutions/array/75-sort-colors/NOTES.md) | Three-way partition (Dutch National Flag) |
+| LC 11 [Container With Most Water](../../solutions/leetcode/array/containerwithmostwater/NOTES.md) | Converging — move shorter wall |
+| LC 15 [3Sum](../../solutions/leetcode/array/threesum/NOTES.md) | Sort + outer index + converging pair |
+| LC 611 [Valid Triangle Number](../../solutions/leetcode/array/validtrianglenumber/NOTES.md) | Sort + fix largest + count `(j - i)` |
+| LC 75 [Sort Colors](../../solutions/leetcode/array/sortcolors/NOTES.md) | Three-way partition (Dutch National Flag) |
 | LC 26 Remove Duplicates         | Write pointer                |
 
 
