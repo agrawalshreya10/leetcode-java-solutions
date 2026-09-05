@@ -58,5 +58,5 @@
   "leetcodePractice.suppressAiTabWorkspaceWide": true,
   "workbench.colorTheme": "LeetCode Dark",
   "workbench.preferredDarkColorTheme": "LeetCode Dark",
-  "zenMode.hideStatusBar": false
+  "zenMode.hideStatusBar": true
 }
