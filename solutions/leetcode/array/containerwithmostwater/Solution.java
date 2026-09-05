@@ -7,7 +7,6 @@ package leetcode.array.containerwithmostwater;
  * [11] Container With Most Water
  */
 
-import java.util.*;
 
 // @lc code=start
 class Solution {
