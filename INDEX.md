@@ -47,6 +47,7 @@ INDEX.md             ← this file (ID column keeps the LeetCode number)
 | 611  | [Valid Triangle Number](solutions/leetcode/array/validtrianglenumber/NOTES.md)    | senior-sdet-interview-prep | two-pointers | ✅      | [NOTES](solutions/leetcode/array/validtrianglenumber/NOTES.md)            |
 | 75   | [Sort Colors](solutions/leetcode/array/sortcolors/NOTES.md)                         | senior-sdet-interview-prep | three-pointers | ✅    | [NOTES](solutions/leetcode/array/sortcolors/NOTES.md)                       |
 | 11   | [Container With Most Water](solutions/leetcode/array/containerwithmostwater/NOTES.md) | senior-sdet-interview-prep | two-pointers | ✅ | [NOTES](solutions/leetcode/array/containerwithmostwater/NOTES.md)         |
+| 643  | [Maximum Average Subarray I](solutions/leetcode/array/maximumaveragesubarrayi/NOTES.md) | senior-sdet-interview-prep | sliding-window | ✅ | [NOTES](solutions/leetcode/array/maximumaveragesubarrayi/NOTES.md)     |
 
 ### String
 
@@ -81,6 +82,10 @@ INDEX.md             ← this file (ID column keeps the LeetCode number)
 ## Pattern library
 
 See [templates/README.md](templates/README.md).
+
+## Language revision
+
+- [Java interview gotchas](notes/java-interview-gotchas.md) — primitives vs wrappers, syntax constraints, interview-handy reminders (append as you hit them).
 
 ## Commands
 

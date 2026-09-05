@@ -10,7 +10,7 @@ Reusable algorithm templates for interview prep and SDET utility design.
 | Linked List | [linked-list/](linked-list/EXPLANATION.md) | 2 |
 | Hash Map / Set | [hash-map/](hash-map/EXPLANATION.md) | 1, 217 |
 
-Coming soon: sliding-window, monotonic-stack, bfs, queue.
+Coming soon: sliding-window (see 643), monotonic-stack, bfs, queue.
 
 Each folder contains:
 
